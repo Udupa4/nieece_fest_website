@@ -3,89 +3,171 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway:ital,wght@0,100;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Vaidyuthak_favicon.jpeg.png" type="image/png">
     <title>Vaidyuthak</title>
 </head>
 <body>
     <div class="top_bar">
-        <img src="./images/NIE-logo-removebg-preview.png" style="height: 80px">
-        <img src="./images/ECE_logo-rem.png" style="height: 80px; float: right;">
+        <img class="nielogo" src="./images/NIE-logo.png">
+        <img class="ecelogo" src="./images/ECE_logo-rem.png">
     </div>
-    <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact</a>
+    <div class="navbar" id="nav-bar">
+        <div class="big-size">
+            <a href="#contact">Contact</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="#events">Events</a>
+            <a href="./about.html"  onclick="showAboutBackground()">About</a>
+        </div>
+        <div class="small-size">
+            <i class="fa fa-bars" id="menu-btn" onclick="toggleNav()"></i>
+            <i class="fa fa-times" aria-hidden="true" id="cross-btn" onclick="toggleNav()"></i>
+            <div id="small-size-option">
+                <a href="./about.html" onclick="toggleNav()">About</a>
+                <a href="#events" onclick="toggleNav()">Events</a>
+                <a href="./gallery.html" onclick="toggleNav()">Gallery</a>
+                <a href="#contact" onclick="toggleNav()">Contact</a>
+            </div>
+        </div>
     </div>
 
     <div class="intro">
     Department Of Electronics And Communication Engineering 
-    <br><span style="font-size: 20px;">PRESENTS</span>
+    <br><span class="intro-present"><b>P R E S E N T S</b></span>
     <br>A State Level Technical Event 
     <br>
-    <img src="./images/Vaidyuthak_logo-removebg-preview.png" style="height: 80px; filter: brightness(1.3) contrast(3);">
+    <img class="logo-class" src="./images/Vaidyuthak_logo.png">
+    <br>
+    <div class="register">
+    <a href="https://docs.google.com/forms/d/1mj-mIEraejhSRD8DiOxuJKoOyYul9bdhIQUDbXOWM9w/edit" target="_blank" class="register-class">Register Here!</a>
+    </div>
     </div>
 
     <div class="about-section" id="about">
-        <h1>About Us</h1><br>
-        <p class="about-writeup">Since its inception in 1971, the department of Electronics and Communication Engineering (ECE) at 
-            NIE has been at the forefront pioneering research and education in its field. The department is a trailblazer in the 
-            Internet of Things (IoT), being the first to offer an academic course on the subject strongly supported by a full-fledged 
-            laboratory set up with generous contributions from its alumni. As a dynamic community of enthusiasts, we delve into the 
-            ever-evolving world of electronics and communication technologies. From innovative advancements to collaborative projects,
-            our association is a hub for learning, networking, and fostering a shared enthusiasm for the limitless possibilities in this 
-            rapidly evolving field. We are the pulse of technological exploration, bringing together students passionate about electronics 
-            and communication. From circuitry to wireless systems, our association is a vibrant community that sparks innovation and fosters 
-            collaboration. Whether you're a seasoned enthusiast or just beginning your journey, join us in navigating the exciting landscapes 
-            of electronic engineering and communication technologies. Our motto is to connect, learn, and shape the future together!</p>  
-            <div class="pic-class">
+        <h1 style="text-align: center;">About Vaidyuthak</h1><br>
+        <p class="about-writeup">The Department of Electronics and Communication Engineering of The National Institute of Engineering, Mysuru, is delighted to 
+            announce the highly anticipated return of the ECE Fest after a four-year hiatus. The last Fest was held in the year 2019, 
+            and we are thrilled to bring it back in a grand manner in 2023, under the exciting name Vaidyuthak 2023. After overcoming challenges 
+            posed by Covid-19 in previous years, we are determined to make this year's fest a memorable and impactful experience. 
+            As a part of the ECE Fest, we are organizing a state-level Technical event, featuring a Project Exhibition and Poster Presentation.
+            <br><br>
+            <p class="about-writeup">In recognition of the outstanding contributions, we are pleased to announce the following prize money:</p>
+            <br>
+
             <div>
-            <img src="./images/principal.jpeg" style="height: 100px; width: 100px; border-radius: 50px;">
-            <div>
-            <br>Dr. Rohini Nagapadma
-            <br>Principal
-            </div>
-            </div>
-            <div>
-            <img src="./images/parmeshwar_sir.jpeg" style="height: 100px; width: 100px; border-radius: 50px;">
-            <div>
-            <br>Dr. S Parmeshwara
-            <br>HOD & Faculty Chairperson
-            </div>
-            </div>
+            <b>Project Exhibition : </b><br>
             
+            1st Place: ₹7000/- <br>
+            2nd Place: ₹5000/- 
             </div>
+            <br>
+
+            <div>
+            <b>Poster Presentation : </b><br>
+            
+            1st Place: ₹5000/- <br>
+            2nd Place: ₹3000/-
+            </div>
+            <br>
+            <p class="about-writeup">Join us for an exciting showcase of innovation and expertise in the field. 
+            Don't miss the opportunity to be part of this significant event in 2023, as we bring back the 
+            spirit of Vaidyuthak with enthusiasm and grandeur!</p>
     </div>
     <div class="events-section" id="events">
-        <h1>Technical Events</h1><br>   
-        <h2>Project and Poster Presentation</h2>
+        <h1 style="text-align: center;">Technical Events</h1><br>   
+        <h2 style="text-align: center;">Project Exhibition and Poster Presentation</h2><br>
+        <h3 style="text-align: center;">Domains to Participate</h3><br>
+        <div class="list-div">
+        <div>
         <ul>
-            <li>Machine Learning</li>
+            <li>VLSI</li>
             <li>Robotics</li>
-            <li>Embedded Systems</li>
-            <li>Control System</li>
+            <li>Internet Of Things</li>
             <li>Digital Signal Processing</li>
             <li>Control Systems</li>
-            <li>Wireless Communication</li>
-            <li>Biomedical Electronics</li>
+            <li>Embedded Systems</li>
+        </ul>
+        </div>
+        <div>
+        <ul>
             <li>Artificial Intelligence</li>
             <li>Image Processing</li>
+            <li>Wireless Communication</li>
+            <li>Biomedical Electronics</li>
+            <li>Machine Learning</li>
         </ul>
-        
+        </div>
+        </div>
     </div>
     <div class="contact-section" id="contact">
-        <h1>Contact Here</h1><br>
-        Since its inception in 1971, the department of Electronics and Communication Engineering (ECE) at 
-            NIE has been at the forefront pioneering research and education in its field.The department is a trailblazer in the 
-            Internet of Things (IoT), being the first to offer an academic course on the subject strongly supported by a full-fledged 
-            laboratory set up with generous contributions from its alumni.As a dynamic community of enthusiasts, we delve into the 
-            ever-evolving world of electronics and communication technologies. From innovative advancements to collaborative projects, 
-            our association is a hub for learning, networking, and fostering a shared enthusiasm for the limitless possibilities in this 
-            rapidly evolving field. We are the pulse of technological exploration, bringing together students passionate about electronics 
-            and communication. From circuitry to wireless systems, our association is a vibrant community that sparks innovation and fosters 
-            collaboration. Whether you're a seasoned enthusiast or just beginning your journey, join us in navigating the exciting landscapes 
-            of electronic engineering and communication technologies. Our motto is to connect, learn, and shape the future together!</p>
-        
+        <h1 style="text-align: center;">Contact Details</h1><br>
+        <div class="contact-info">
+        <div>
+          <b>Student Coordinators :</b><br><br>
+          <ul>
+          <li>Abhilash S (8197074117)</li> <br>
+          <li>Chirag G Appaiah (8660296917)</li><br>
+          <li>Nishanth Udupa  (9108427338)</li><br>
+          <li>Sacheth V N  (7975929544)</li><br>
+          </ul>
+        </div>
+        <div>
+          <b>Faculty Coordinators :</b> <br><br>
+          <ul>
+          <li>Dr. Anjanappa C - Associate Prof.  (9480477155) </li><br>
+          <li>Dr. Nagaraju C - Assistant Prof.  (9886239023)</li><br>
+          <li>Puneeth S - Assistant Prof.  (7795765756)</li><br>
+          </ul>
+        </div>
+        </div>
     </div>
+    <div class="coor-info">
+        <div class="names">
+            <div style="text-align: center;">
+                Student Chairperson<br>
+                Neeraj M Gowda
+                <div class="social-icon">
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:vaidyuthak@nie.ac.in" style="text-decoration: none; color: white;">vaidyuthak@nie.ac.in</a>
+                </div>
+                <div>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="https://instagram.com/vaidyuthak_2023?igshid=OGQ5ZDc2ODk2ZA==" style="text-decoration: none; color: white;">vaidyuthak_2023</a>
+                </div>
+                </div>
+            </div><br>
+        <div style="text-align: center;">
+            Developed By <br>Soumyadeep Roy & Nishanth Udupa
+        </div>   
+        </div>
+    </div>
+    <script>
+        function toggleNav()
+        {
+            let x = document.getElementById("small-size-option");
+            let crossElement = document.getElementById("cross-btn");
+            let menuElement = document.getElementById("menu-btn");
+
+            if(x.style.display == "block")
+            {
+                x.style.display = "none";
+                crossElement.style.display = "none";
+                menuElement.style.display = "block";
+            }
+            else{
+                x.style.display = "block";
+                crossElement.style.display = "block";
+                menuElement.style.display = "none";
+            }
+        }
+
+        function showAboutBackground() {
+            document.body.classList.remove('home-background');
+            document.body.classList.add('about-background');
+        }
+    </script>
 </body>
 </html>
