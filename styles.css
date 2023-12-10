@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+
 *{
     border: 0;
     padding: 0;
@@ -15,7 +17,7 @@ body {
 .top_bar {
     z-index: 10000;
     overflow: hidden;
-    background-color: #D6EAF8;
+    background: white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,12 +27,19 @@ body {
     align-items: center;
 }
 
+.nielogo {
+    height: 80px;
+}
+
+.ecelogo {
+    height: 80px; 
+    width: 80px; 
+    float: right;
+}
+
 .navbar {
     margin-top: 70px;
     overflow: hidden;
-    overflow: hidden;
-    width: 100%;
-    display: block;
 }
 
 .navbar a {
@@ -38,7 +47,7 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px;
+    padding: 14px 16px;;
     text-decoration: none;
     font-size: 20px;
 }
@@ -47,23 +56,74 @@ body {
     color: #95A5A6;
 }
 
+.small-size {
+    display: none;
+}
+
 .intro {
     text-align: center;
     color: white;
     font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 100px;
 }
 
+.intro-present {
+    font-size: 20px;
+    color: rgb(205, 69, 15);
+    filter: brightness(5);
+}
+
+.logo-class {
+    height: 80px;
+    filter: brightness(1.3) contrast(2);
+}
+
+
+.register-class{
+    background-color: #1c87c9;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    }
+      @keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+
+      .register-class{
+        animation: glowing 1300ms infinite;
+      }
+
 .about-section {
+    border-radius: 15px;
     background-color: #D6EAF8;
     opacity: 0.8;
-    max-width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 30px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .about-writeup {
@@ -79,25 +139,218 @@ body {
 }
 
 .events-section {
+    border-radius: 15px;
     background-color: #D6EAF8;
-    opacity: 0.7;
-    max-width: 100%;
+    opacity: 0.8;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+}
+
+.list-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .contact-section {
+    border-radius: 15px;
     background-color: #D6EAF8;
-    opacity: 0.7;
-    max-width: 100%;
+    opacity: 0.8;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
-@media screen {
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content:space-around;
+}
+
+.home-background {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about-background {
+    background-image: url(./images/NRN_ECE_block.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    height: 100vh;
+}
+.make-flex-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section h1 {
+    color: #333;
+}
+#logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.coor-info {
+    background-color: #2E4053;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+
+.names {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-envelope {
+    color: red;
+}
+
+.fa-instagram {
+    display: inline-block;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FF8C00);
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nielogo {
+        height: 50px;
+    }
+    
+    .ecelogo {
+        height: 50px; 
+        width: 50px; 
+        float: right;
+    }
+
+    .pic-class {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .pic-class div {
+        margin-bottom: 10px;
+    }
+
+    .big-size {
+        display: none;
+    }
+    
+    .small-size {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .small-size i {
+        color: white;
+        font-size: 18px;
+        margin-right: 15px;
+    }
+
+    #cross-btn {
+        display: none;
+    }
+
+    #small-size-option {
+        display: none;
+        position: absolute;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.17);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(15.2px);
+        -webkit-backdrop-filter: blur(15.2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        opacity: 0.9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        top: 100px;
+        right: 15px;
+    }
+
+    #small-size-option a {
+        float: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #small-size-option a:hover {
+        color: white;
+    }
+
+    .intro {
+        font-size: 35px;
+    }
+
+    .intro-present {
+        font-size: 18px;
+    }
+
+    .logo-class {
+        height: 65px;
+    }
+
+    .list-div {
+        flex-direction: column;
+    }    
+
+    .coor-info {
+        background-color: #2E4053;
+        overflow: hidden;
+        width: 100%;
+        height: 180px;
+    }
+
+    .social-icon {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .contact-info div {
+        margin-bottom: 30px;
+    }
     
 }
